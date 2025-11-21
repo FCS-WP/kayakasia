@@ -1,0 +1,91 @@
+.trip-shortcode-wrapper {
+  border-radius: 18px;
+  padding: 30px 20px 40px;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  .trip-shortcode-filter {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+    .filter-header {
+      display: flex;
+      align-items: center;
+      img {
+        max-width: 60px;
+      }
+    }
+    .filter-items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      .filter-title {
+        font-weight: 600;
+        font-size: 16px;
+        margin: 0 !important;
+      }
+      .filter-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .filter-item {
+        padding: 0;
+        background-color: #fff;
+        border: none;
+        border-bottom: 1px solid #000;
+        border-radius: 0;
+        color: #9a9b9f;
+        font-size: 14px;
+        option {
+          font-size: 16px;
+        }
+      }
+    }
+    @include tablet {
+      .filter-items {
+        width: 49%;
+      }
+    }
+    @include desktop {
+      gap: 30px;
+      flex-wrap: nowrap;
+      .filter-items {
+        width: 100%;
+      }
+    }
+  }
+  .filter-button {
+    text-align: center;
+
+    margin-top: 30px;
+    margin-bottom: -65px;
+    button {
+      padding: 10px 30px;
+      font-weight: 500;
+      font-family: "Poppins";
+      background-color: var(--e-global-color-secondary);
+      color: #fff;
+      border: 1px solid var(--e-global-color-secondary);
+      &:hover {
+        background-color: var(--e-global-color-secondary);
+        color: #000;
+        border: 1px solid var(--e-global-color-secondary);
+      }
+    }
+  }
+
+  @include tablet {
+    padding: 40px 30px 62px;
+    .filter-button {
+      margin-top: 50px;
+      margin-bottom: -85px;
+    }
+  }
+}
