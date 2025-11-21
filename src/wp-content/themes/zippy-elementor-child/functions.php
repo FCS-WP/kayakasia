@@ -26,3 +26,4 @@ if (!defined('THEME_URL'))
 require_once THEME_DIR_CHILD . '/includes/autoload.php';
 require_once THEME_DIR_CHILD . '/includes/shortcode/shortcode_fillter_category.php';
 require_once THEME_DIR_CHILD . '/includes/shortcode/shortcode_fillter_trip.php';
+require_once THEME_DIR_CHILD . '/includes/custom.php';
