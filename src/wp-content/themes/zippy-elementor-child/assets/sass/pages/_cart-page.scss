@@ -1,0 +1,47 @@
+.woocommerce-cart {
+  font-family: poppins;
+  .col2-set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    .col-1 {
+      width: 100%;
+      background-color: none !important;
+    }
+    .col-2 {
+      width: 100%;
+      .cart_totals {
+        width: 100%;
+        h2 {
+          margin-top: 0;
+          line-height: 0.8;
+        }
+        a.checkout-button {
+          background-color: var(--e-global-color-secondary) !important;
+          border-radius: 8px !important;
+          font-weight: 500 !important;
+          font-size: 18px !important;
+          &:hover {
+            color: #000;
+          }
+        }
+      }
+    }
+    tr {
+      td,
+      th {
+        border: 0 !important;
+      }
+    }
+
+    @include tablet {
+      .col-1 {
+        width: 65%;
+      }
+      .col-2 {
+        width: 30%;
+      }
+    }
+  }
+}

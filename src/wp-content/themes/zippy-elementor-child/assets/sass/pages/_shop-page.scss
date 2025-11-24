@@ -1,0 +1,38 @@
+.shop-product-list {
+  a.added_to_cart {
+    display: none !important;
+  }
+  .orderby {
+    background-color: #fff;
+    border: none;
+    font-size: 14px;
+  }
+  .woocommerce-result-count {
+    margin: 5px 0 0;
+    font-size: 14px;
+  }
+  ul.products li.product {
+    padding: 0 !important;
+    overflow: hidden;
+    .woocommerce-loop-product__title {
+      padding: 0;
+      margin: 10px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1.2em;
+      max-height: calc(1.2em * 2);
+    }
+    .add_to_cart_button {
+      margin: 10px !important;
+    }
+  }
+  @include tablet {
+    .woocommerce-result-count,
+    .orderby {
+      font-size: 16px;
+    }
+  }
+}
