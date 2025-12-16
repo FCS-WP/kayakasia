@@ -35,7 +35,7 @@
         flex-direction: column;
         justify-content: space-between;
       }
-      .filter-item {
+      select.filter-item {
         padding: 0;
         background-color: #fff;
         border: none;
@@ -43,8 +43,15 @@
         border-radius: 0;
         color: #9a9b9f;
         font-size: 14px;
+        &:focus-visible {
+          outline: none;
+        }
         option {
           font-size: 16px;
+          color: #000;
+          &:hover {
+            background-color: aqua;
+          }
         }
       }
     }
