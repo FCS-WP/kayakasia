@@ -4,4 +4,16 @@
       margin-bottom: 0 !important;
     }
   }
+  .related-product {
+    .add_to_cart_button {
+      margin: 10px;
+    }
+  }
+  @include tablet {
+    .related-product {
+      .add_to_cart_button {
+        margin: 20px;
+      }
+    }
+  }
 }
